@@ -1,0 +1,10 @@
+---
+applications:
+  - name: meteor-react
+    host: meteor-react
+    buildpack: https://github.com/cloudfoundry/heroku-buildpack-nodejs.git
+    memory: 128M
+    instances: 1
+    disk_quota: 128M
+    path: ./converted
+    command: node main.js
